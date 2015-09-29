@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/001-项目名字/001-项目名字.iml" filepath="$PROJECT_DIR$/001-项目名字/001-项目名字.iml" />
       <module fileurl="file://$PROJECT_DIR$/002-山寨应用汇/002-山寨应用汇.iml" filepath="$PROJECT_DIR$/002-山寨应用汇/002-山寨应用汇.iml" />
       <module fileurl="file://$PROJECT_DIR$/003-电话拔号器/003-电话拔号器.iml" filepath="$PROJECT_DIR$/003-电话拔号器/003-电话拔号器.iml" />
+      <module fileurl="file://$PROJECT_DIR$/004-点击事件/004-点击事件.iml" filepath="$PROJECT_DIR$/004-点击事件/004-点击事件.iml" />
+      <module fileurl="file://$PROJECT_DIR$/005-短信发送器/005-短信发送器.iml" filepath="$PROJECT_DIR$/005-短信发送器/005-短信发送器.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+    <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="请输入对象号码"
+            />
+
+    <EditText
+            android:id="@+id/et_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lines="5"
+            android:hint="请输入短信内容"
+            android:gravity="top"
+            />
+
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="发送"
+            android:onClick="send"
+            />
+</LinearLayout>
+
