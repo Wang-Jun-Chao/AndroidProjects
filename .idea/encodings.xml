@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
-    <file url="file://$PROJECT_DIR$/douban/proguard-project.txt" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/douban/src/cn/itcast/douban/MainTabActivity.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/douban/src/cn/itcast/douban/TestActivity.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/douban/src/cn/itcast/douban/TestActivity1.java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
