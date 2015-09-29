@@ -19,9 +19,26 @@
             />
 
     <Button
+            android:id="@+id/king"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="占我上王者"
+            android:onClick="getScore"
+            />
+
+    <Button
+            android:id="@+id/diamond"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="占我上钻"
+            android:onClick="getScore"
+            />
+
+    <Button
+            android:id="@+id/master"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="占我上大师"
             android:onClick="getScore"
             />
 </LinearLayout>
