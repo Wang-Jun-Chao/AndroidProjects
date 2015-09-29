@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/001-项目名字/001-项目名字.iml" filepath="$PROJECT_DIR$/001-项目名字/001-项目名字.iml" />
+      <module fileurl="file://$PROJECT_DIR$/002-山寨应用汇/002-山寨应用汇.iml" filepath="$PROJECT_DIR$/002-山寨应用汇/002-山寨应用汇.iml" />
+      <module fileurl="file://$PROJECT_DIR$/003-电话拔号器/003-电话拔号器.iml" filepath="$PROJECT_DIR$/003-电话拔号器/003-电话拔号器.iml" />
+    </modules>
+  </component>
+</project>
