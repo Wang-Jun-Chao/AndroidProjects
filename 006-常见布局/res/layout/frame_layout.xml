@@ -3,24 +3,34 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent">
     <TextView
-            android:layout_weight="1"
+            android:id="@+id/tv1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="18sp"
             android:text="第一个"
+            android:layout_gravity="right|bottom"
             />
     <TextView
-            android:layout_weight="1"
+            android:id="@+id/tv2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="第二个"
             android:textSize="18sp"
+            android:layout_gravity="center"
             />
+
     <TextView
-            android:layout_weight="1"
+            android:id="@+id/tv3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="18sp"
             android:text="第三个"
+            />
+    <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第四个"
+            android:textSize="18sp"
             />
 </FrameLayout>
