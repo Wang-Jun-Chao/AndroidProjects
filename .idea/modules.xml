@@ -12,6 +12,8 @@
       <module fileurl="file://$PROJECT_DIR$/008-在内部存储器中读写文件/008-在内部存储器中读写文件.iml" filepath="$PROJECT_DIR$/008-在内部存储器中读写文件/008-在内部存储器中读写文件.iml" />
       <module fileurl="file://$PROJECT_DIR$/009-使用API在内部存储中读写文件/009-使用API在内部存储中读写文件.iml" filepath="$PROJECT_DIR$/009-使用API在内部存储中读写文件/009-使用API在内部存储中读写文件.iml" />
       <module fileurl="file://$PROJECT_DIR$/010-在外部存储中读写文件/010-在外部存储中读写文件.iml" filepath="$PROJECT_DIR$/010-在外部存储中读写文件/010-在外部存储中读写文件.iml" />
+      <module fileurl="file://$PROJECT_DIR$/011-获取SD卡剩余容量/011-获取SD卡剩余容量.iml" filepath="$PROJECT_DIR$/011-获取SD卡剩余容量/011-获取SD卡剩余容量.iml" />
+      <module fileurl="file://$PROJECT_DIR$/012-文件访问权限/012-文件访问权限.iml" filepath="$PROJECT_DIR$/012-文件访问权限/012-文件访问权限.iml" />
     </modules>
   </component>
 </project>
