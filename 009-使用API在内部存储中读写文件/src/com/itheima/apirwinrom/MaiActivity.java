@@ -1,4 +1,4 @@
-package com.itheima.rwinrom2;
+package com.itheima.apirwinrom;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -19,10 +19,10 @@ public class MaiActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(com.itheima.rwinrom2.R.layout.main);
 
-        et_name = (EditText) findViewById(R.id.et_name);
-        et_pass = (EditText) findViewById(R.id.et_pass);
+        et_name = (EditText) findViewById(com.itheima.rwinrom2.R.id.et_name);
+        et_pass = (EditText) findViewById(com.itheima.rwinrom2.R.id.et_pass);
 
         readAccount();
     }
@@ -63,7 +63,7 @@ public class MaiActivity extends Activity {
         String name = et_name.getText().toString();
         String pass = et_pass.getText().toString();
 
-        CheckBox cb = (CheckBox) findViewById(R.id.cb);
+        CheckBox cb = (CheckBox) findViewById(com.itheima.rwinrom2.R.id.cb);
         // 判断选框是否被勾选
         if (cb.isChecked()) {
             // 内部存储空间的路径：/data/data/com.itheima.rwinrom/login.txt
