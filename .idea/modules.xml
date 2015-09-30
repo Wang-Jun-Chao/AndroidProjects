@@ -9,6 +9,8 @@
       <module fileurl="file://$PROJECT_DIR$/005-短信发送器/005-短信发送器.iml" filepath="$PROJECT_DIR$/005-短信发送器/005-短信发送器.iml" />
       <module fileurl="file://$PROJECT_DIR$/006-常见布局/006-常见布局.iml" filepath="$PROJECT_DIR$/006-常见布局/006-常见布局.iml" />
       <module fileurl="file://$PROJECT_DIR$/007-日志信息/007-日志信息.iml" filepath="$PROJECT_DIR$/007-日志信息/007-日志信息.iml" />
+      <module fileurl="file://$PROJECT_DIR$/008-在内部存储器中读写文件/008-在内部存储器中读写文件.iml" filepath="$PROJECT_DIR$/008-在内部存储器中读写文件/008-在内部存储器中读写文件.iml" />
+      <module fileurl="file://$PROJECT_DIR$/009-使用API在内部存储中读写文件/009-使用API在内部存储中读写文件.iml" filepath="$PROJECT_DIR$/009-使用API在内部存储中读写文件/009-使用API在内部存储中读写文件.iml" />
     </modules>
   </component>
 </project>

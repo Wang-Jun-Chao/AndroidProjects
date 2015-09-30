@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">009-使用API在内部存储中读写文件</string>
+</resources>
