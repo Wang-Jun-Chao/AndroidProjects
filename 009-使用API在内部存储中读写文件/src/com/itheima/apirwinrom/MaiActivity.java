@@ -19,16 +19,16 @@ public class MaiActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.itheima.rwinrom2.R.layout.main);
+        setContentView(R.layout.main);
 
-        et_name = (EditText) findViewById(com.itheima.rwinrom2.R.id.et_name);
-        et_pass = (EditText) findViewById(com.itheima.rwinrom2.R.id.et_pass);
+        et_name = (EditText) findViewById(R.id.et_name);
+        et_pass = (EditText) findViewById(R.id.et_pass);
 
         readAccount();
     }
 
     public void readAccount() {
-        File file = new File("/data/data/com.itheima.rwinrom/login.txt");
+        File file = new File(getFilesDir(), "login.txt");
 
         if (file.exists()) {
             BufferedReader fr = null;
@@ -63,11 +63,12 @@ public class MaiActivity extends Activity {
         String name = et_name.getText().toString();
         String pass = et_pass.getText().toString();
 
-        CheckBox cb = (CheckBox) findViewById(com.itheima.rwinrom2.R.id.cb);
+        CheckBox cb = (CheckBox) findViewById(R.id.cb);
         // 判断选框是否被勾选
         if (cb.isChecked()) {
-            // 内部存储空间的路径：/data/data/com.itheima.rwinrom/login.txt
-            File file = new File("/data/data/com.itheima.rwinrom/login.txt");
+            // 内部存储空间的路径：getFilesDir() = /data/data/com.itheima.apirwinrom
+            // 要保存的文件名：login.txt
+            File file = new File(getFilesDir(), "login.txt");
             FileWriter fos = null;
             try {
                 fos = new FileWriter(file, false);
