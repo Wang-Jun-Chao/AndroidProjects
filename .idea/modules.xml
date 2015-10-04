@@ -18,6 +18,8 @@
       <module fileurl="file://$PROJECT_DIR$/014-SharedPreference/014-SharedPreference.iml" filepath="$PROJECT_DIR$/014-SharedPreference/014-SharedPreference.iml" />
       <module fileurl="file://$PROJECT_DIR$/015-生成XML文件/015-生成XML文件.iml" filepath="$PROJECT_DIR$/015-生成XML文件/015-生成XML文件.iml" />
       <module fileurl="file://$PROJECT_DIR$/016-XML序列化器/016-XML序列化器.iml" filepath="$PROJECT_DIR$/016-XML序列化器/016-XML序列化器.iml" />
+      <module fileurl="file://$PROJECT_DIR$/017-Pull解析/017-Pull解析.iml" filepath="$PROJECT_DIR$/017-Pull解析/017-Pull解析.iml" />
+      <module fileurl="file://$PROJECT_DIR$/018-单元测试框架/018-单元测试框架.iml" filepath="$PROJECT_DIR$/018-单元测试框架/018-单元测试框架.iml" />
     </modules>
   </component>
 </project>

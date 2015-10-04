@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<weather>
+    <city>
+        <name>上海</name>
+        <temp>5°C</temp>
+        <pm>80</pm>
+    </city>
+    <city>
+        <name>北京</name>
+        <temp>-5°C</temp>
+        <pm>800</pm>
+    </city>
+    <city>
+        <name>西安</name>
+        <temp>12°C</temp>
+        <pm>600</pm>
+    </city>
+</weather>
