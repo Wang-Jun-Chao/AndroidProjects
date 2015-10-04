@@ -46,7 +46,7 @@ public class MainActivity extends Activity {
 
             builder.append("<type>");
             builder.append(sms.getType());
-            builder.append("</body>");
+            builder.append("</type>");
 
             builder.append("<address>");
             builder.append(sms.getAddress());
