@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 import java.io.*;
 
-public class MaiActivity extends Activity {
+public class MainActivity extends Activity {
     private EditText et_name;
     private EditText et_pass;
 

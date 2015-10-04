@@ -15,6 +15,8 @@
       <module fileurl="file://$PROJECT_DIR$/011-获取SD卡剩余容量/011-获取SD卡剩余容量.iml" filepath="$PROJECT_DIR$/011-获取SD卡剩余容量/011-获取SD卡剩余容量.iml" />
       <module fileurl="file://$PROJECT_DIR$/012-文件访问权限/012-文件访问权限.iml" filepath="$PROJECT_DIR$/012-文件访问权限/012-文件访问权限.iml" />
       <module fileurl="file://$PROJECT_DIR$/013-其它应用/013-其它应用.iml" filepath="$PROJECT_DIR$/013-其它应用/013-其它应用.iml" />
+      <module fileurl="file://$PROJECT_DIR$/014-SharedPreference/014-SharedPreference.iml" filepath="$PROJECT_DIR$/014-SharedPreference/014-SharedPreference.iml" />
+      <module fileurl="file://$PROJECT_DIR$/015-生成XML文件/015-生成XML文件.iml" filepath="$PROJECT_DIR$/015-生成XML文件/015-生成XML文件.iml" />
     </modules>
   </component>
 </project>
