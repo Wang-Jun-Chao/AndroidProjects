@@ -63,13 +63,19 @@ public class MainActivity extends Activity {
         public View getView(int i, View view, ViewGroup viewGroup) {
             Person p = personList.get(i);
 
-//            System.out.println("getView调用：" + i);
+            System.out.println("getView调用：" + i);
 //            TextView tv = new TextView(MainActivity.this);
 //            tv.setText(p.toString());
 //            tv.setTextSize(18);
 
             // 第一种：把布局文件转换成一个View对象
-            View v = View.inflate(MainActivity.this, R.layout.item_listview, null);
+
+            View v = null;
+            if (view == null) {
+                v = View.inflate(MainActivity.this, R.layout.item_listview, null);
+            } else {
+                v = view;
+            }
 
 //            // 第二种：获取布局填充器对象
 //            LayoutInflater inflater = LayoutInflater.from(MainActivity.this);
@@ -92,13 +98,13 @@ public class MainActivity extends Activity {
 
         @Override
         public Object getItem(int i) {
-            return null;
+            return personList.get(i);
         }
 
 
         @Override
         public long getItemId(int i) {
-            return 0;
+            return i;
         }
 
     }

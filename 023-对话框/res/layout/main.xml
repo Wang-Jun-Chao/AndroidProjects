@@ -17,5 +17,12 @@
             android:text="单选对话框"
             android:onClick="click2"
             />
+
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="多选对话框"
+            android:onClick="click3"
+            />
 </LinearLayout>
 
