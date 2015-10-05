@@ -1,5 +1,7 @@
 package com.itheima.sqlitedatabase.test;
 
+import android.content.ContentValues;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.test.AndroidTestCase;
 import com.itheima.sqlitedatabase.MyOpenHelper;
@@ -55,5 +57,26 @@ public class TestCase extends AndroidTestCase {
 
     public void testUpdate() {
         db.execSQL("UPDATE person SET phone = ? WHERE name= ?", new Object[]{"186666", "小志的儿子"});
+    }
+
+    public void testSelect() {
+        Cursor cursor = db.rawQuery("SELECT name, salary FROM person", null);
+        while (cursor.moveToNext()) {
+            // 通过列索引获取列的值
+            String name = cursor.getString(cursor.getColumnIndex("name"));
+            String salary = cursor.getString(cursor.getColumnIndex("salary"));
+            System.out.println(name + "=" + salary);
+        }
+
+        cursor.close();
+    }
+
+    public void testInsertApi() {
+        // 把要插入的数据全部封装到ContentValues对象中
+        ContentValues values = new ContentValues();
+        values.put("name", "游天龙");
+        values.put("phone", "159999");
+        values.put("salary", 16000);
+        db.insert("person", null, values);
     }
 }
