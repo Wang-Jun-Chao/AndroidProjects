@@ -42,8 +42,8 @@ public class TestCase extends AndroidTestCase {
     public void testInsert() {
 //        MyOpenHelper oh = new MyOpenHelper(getContext(), "people.db", null, 2);
 //        SQLiteDatabase db = oh.getWritableDatabase();
-//        db.execSQL("INSERT INTO person(name, salary, phone) VALUES('小志', '13000', 138438)");
-        db.execSQL("INSERT INTO person(name, salary, phone) VALUES(?, ?, ?)", new Object[]{"小志的老婆[1]", "13000", 138438});
+        db.execSQL("INSERT INTO person(name, salary, phone) VALUES('小志', '13000', 138438)");
+//        db.execSQL("INSERT INTO person(name, salary, phone) VALUES(?, ?, ?)", new Object[]{"小志的老婆[1]", "13000", 138438});
 //        db.execSQL("INSERT INTO person(name, salary, phone) VALUES(?, ?, ?)", new Object[]{"小志的儿子", 14000, "138888"});
 //        db.close();
     }
@@ -99,6 +99,27 @@ public class TestCase extends AndroidTestCase {
             String phone = cursor.getString(cursor.getColumnIndex("phone"));
             String salary = cursor.getString(cursor.getColumnIndex("salary"));
             System.out.println(name + ", " + phone + ", " + salary);
+        }
+    }
+
+    public void testTransaction() {
+        try {
+            // 开启事物
+            db.beginTransaction();
+            ContentValues values = new ContentValues();
+            values.put("salary", 12000);
+            db.update("person", values, "name=?", new String[]{"小志"});
+
+            values.clear();
+            values.put("salary", 15000);
+            db.update("person", values, "name=?", new String[]{"小志的儿子"});
+
+            // 设置事务执行成功
+            db.setTransactionSuccessful();
+
+        } finally {
+            // 关闭事务，如果已经设置事物成功就提交，否则回滚
+            db.endTransaction();
         }
     }
 }
