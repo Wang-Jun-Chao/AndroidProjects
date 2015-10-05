@@ -20,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/016-XML序列化器/016-XML序列化器.iml" filepath="$PROJECT_DIR$/016-XML序列化器/016-XML序列化器.iml" />
       <module fileurl="file://$PROJECT_DIR$/017-Pull解析/017-Pull解析.iml" filepath="$PROJECT_DIR$/017-Pull解析/017-Pull解析.iml" />
       <module fileurl="file://$PROJECT_DIR$/018-单元测试框架/018-单元测试框架.iml" filepath="$PROJECT_DIR$/018-单元测试框架/018-单元测试框架.iml" />
+      <module fileurl="file://$PROJECT_DIR$/019-SQLite数据库/019-SQLite数据库.iml" filepath="$PROJECT_DIR$/019-SQLite数据库/019-SQLite数据库.iml" />
     </modules>
   </component>
 </project>
