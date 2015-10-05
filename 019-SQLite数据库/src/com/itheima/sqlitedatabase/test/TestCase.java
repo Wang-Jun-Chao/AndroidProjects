@@ -79,4 +79,26 @@ public class TestCase extends AndroidTestCase {
         values.put("salary", 16000);
         db.insert("person", null, values);
     }
+
+    public void testDeleteApi() {
+        int i = db.delete("person", "name = ? AND _id = ?", new String[]{"小志的儿子", "3"});
+        System.out.println(i);
+    }
+
+    public void testUpdateApi() {
+        ContentValues values = new ContentValues();
+        values.put("salary", 26000);
+        int i = db.update("person", values, "name = ?", new String[]{"游天龙"});
+        System.out.println(i);
+    }
+
+    public void testQueryApi() {
+        Cursor cursor = db.query("person", null, null, null, null, null, null);
+        while (cursor.moveToNext()) {
+            String name = cursor.getString(cursor.getColumnIndex("name"));
+            String phone = cursor.getString(cursor.getColumnIndex("phone"));
+            String salary = cursor.getString(cursor.getColumnIndex("salary"));
+            System.out.println(name + ", " + phone + ", " + salary);
+        }
+    }
 }
