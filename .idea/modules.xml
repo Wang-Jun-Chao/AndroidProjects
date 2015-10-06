@@ -28,6 +28,7 @@
       <module fileurl="file://$PROJECT_DIR$/024-网络图片查看器/024-网络图片查看器.iml" filepath="$PROJECT_DIR$/024-网络图片查看器/024-网络图片查看器.iml" />
       <module fileurl="file://$PROJECT_DIR$/025-主线程阻塞/025-主线程阻塞.iml" filepath="$PROJECT_DIR$/025-主线程阻塞/025-主线程阻塞.iml" />
       <module fileurl="file://$PROJECT_DIR$/026-带缓冲的图片查看器/026-带缓冲的图片查看器.iml" filepath="$PROJECT_DIR$/026-带缓冲的图片查看器/026-带缓冲的图片查看器.iml" />
+      <module fileurl="file://$PROJECT_DIR$/027-开源图片查看器/027-开源图片查看器.iml" filepath="$PROJECT_DIR$/027-开源图片查看器/027-开源图片查看器.iml" />
     </modules>
   </component>
 </project>
