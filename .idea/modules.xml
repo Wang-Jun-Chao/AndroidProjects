@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/000-01-新闻服务器端/000-01-新闻服务器端.iml" filepath="$PROJECT_DIR$/000-01-新闻服务器端/000-01-新闻服务器端.iml" />
       <module fileurl="file://$PROJECT_DIR$/001-项目名字/001-项目名字.iml" filepath="$PROJECT_DIR$/001-项目名字/001-项目名字.iml" />
       <module fileurl="file://$PROJECT_DIR$/002-山寨应用汇/002-山寨应用汇.iml" filepath="$PROJECT_DIR$/002-山寨应用汇/002-山寨应用汇.iml" />
       <module fileurl="file://$PROJECT_DIR$/003-电话拔号器/003-电话拔号器.iml" filepath="$PROJECT_DIR$/003-电话拔号器/003-电话拔号器.iml" />
@@ -30,6 +31,7 @@
       <module fileurl="file://$PROJECT_DIR$/026-带缓冲的图片查看器/026-带缓冲的图片查看器.iml" filepath="$PROJECT_DIR$/026-带缓冲的图片查看器/026-带缓冲的图片查看器.iml" />
       <module fileurl="file://$PROJECT_DIR$/027-开源图片查看器/027-开源图片查看器.iml" filepath="$PROJECT_DIR$/027-开源图片查看器/027-开源图片查看器.iml" />
       <module fileurl="file://$PROJECT_DIR$/028-HTML源文件查看器/028-HTML源文件查看器.iml" filepath="$PROJECT_DIR$/028-HTML源文件查看器/028-HTML源文件查看器.iml" />
+      <module fileurl="file://$PROJECT_DIR$/029-小志新闻客户端/029-小志新闻客户端.iml" filepath="$PROJECT_DIR$/029-小志新闻客户端/029-小志新闻客户端.iml" />
     </modules>
   </component>
 </project>
