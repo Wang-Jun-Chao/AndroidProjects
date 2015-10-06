@@ -26,6 +26,7 @@ public class MainActivity extends Activity {
         long availableBlocks;
 
 
+        // 这里要Android4.3的版本才行
         if (Build.VERSION.SDK_INT >=Build.VERSION_CODES.JELLY_BEAN_MR2) {
             blockSize = statFs.getBlockSizeLong();
             totalBlocks = statFs.getBlockCountLong();
