@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="000-03-多线程下载:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/000_03__war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="000-03-多线程下载/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="000-03-多线程下载" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
