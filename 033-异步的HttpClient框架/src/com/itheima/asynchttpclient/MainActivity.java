@@ -64,13 +64,14 @@ public class MainActivity extends Activity {
 
         String url = "http://125.216.240.210:8080/web2/servlet/LoginServlet";
         // 创建异步HttpClient
+        // 把要提交的数据封装到RequestParams对象中
         AsyncHttpClient ahc = new AsyncHttpClient();
 
         // 发送POST请求提交数据
-        RequestParams rp = new RequestParams();
-        rp.add("name", name);
-        rp.add("pass", pass);
-        ahc.post(url, rp, new MyResponseHandler());
+        RequestParams params = new RequestParams();
+        params.add("name", name);
+        params.add("pass", pass);
+        ahc.post(url, params, new MyResponseHandler());
 
     }
 }
