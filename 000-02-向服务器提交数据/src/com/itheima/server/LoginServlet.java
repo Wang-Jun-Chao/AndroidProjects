@@ -29,7 +29,7 @@ public class LoginServlet extends HttpServlet {
 
         // 使用ISO-8859-1把nam转换成字节数组，再使用UTF-8把字节数转换成字符串
         // 下面的代码可以能用不上
-//        name = new String(name.getBytes("iso8859-1"), "utf-8");
+        name = new String(name.getBytes("iso8859-1"), "utf-8");
 
         System.out.println(name + "::" + pass);
         if ("小志".equals(name) && "123".equals(pass)) {
