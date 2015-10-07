@@ -3,8 +3,11 @@ package com.itheima.mobilemultidownload;
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.Handler;
+import android.os.Message;
 import android.view.View;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import java.io.*;
 import java.net.HttpURLConnection;
@@ -21,6 +24,15 @@ public class MainActivity extends Activity {
     private static final String path = "http://125.216.240.210:8080/NotepadPP.exe";
 
     private ProgressBar pb;
+    private TextView tv;
+
+    private Handler handler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            // 把变量改成long，在long下进行运算
+            tv.setText((long) pb.getProgress() * 100 / pb.getMax() + "%");
+        }
+    };
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -28,8 +40,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.main);
 
         pb = (ProgressBar) findViewById(R.id.pb);
-
-
+        tv = (TextView) findViewById(R.id.tv);
 
     }
 
@@ -117,6 +128,10 @@ public class MainActivity extends Activity {
                     // 把上次下载的进度显示至进度条
                     currentProgress.addAndGet(lastProgress);
                     pb.setProgress(currentProgress.get());
+
+                    // 发送消息，让主线程刷新文本进度
+                    handler.sendEmptyMessage(1);
+
                     fis.close();
                     br.close();
 
@@ -150,6 +165,9 @@ public class MainActivity extends Activity {
                         // 把本次读取的长度显示至进度条
                         currentProgress.addAndGet(len);
                         pb.setProgress(currentProgress.get());
+
+                        // 发送消息，让主线程刷新文本进度
+                        handler.sendEmptyMessage(1);
 
                         // 每次读取流里的数据，同步把数据写入文件
                         raf.write(buffer, 0, len);
