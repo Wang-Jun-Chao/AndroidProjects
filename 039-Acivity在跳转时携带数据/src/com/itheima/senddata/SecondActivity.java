@@ -1,7 +1,11 @@
 package com.itheima.senddata;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.TextView;
+
+import java.util.Random;
 
 /**
  * Author: 王俊超
@@ -14,5 +18,16 @@ public class SecondActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.second);
+
+        Intent intent = getIntent();
+        // 从Intent对象中取出封装好的数据
+        String maleName = intent.getStringExtra("malename");
+        String femaleName = intent.getStringExtra("femalename");
+
+        Random rd = new Random();
+        int yinyuan = rd.nextInt(99);
+        TextView tv = (TextView) findViewById(R.id.tv);
+        tv.setText(maleName + "和" + femaleName + "的姻缘值为：" + yinyuan);
+
     }
 }
