@@ -7,7 +7,13 @@
     <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Hello World, MainActivity"
+            android:text="主Activtiy"
+            />
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="启动第二个Activity"
+            android:onClick="click"
             />
 </LinearLayout>
 
