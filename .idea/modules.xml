@@ -41,6 +41,7 @@
       <module fileurl="file://$PROJECT_DIR$/034-手机版多线程断点续传/034-手机版多线程断点续传.iml" filepath="$PROJECT_DIR$/034-手机版多线程断点续传/034-手机版多线程断点续传.iml" />
       <module fileurl="file://$PROJECT_DIR$/035-xUtils/035-xUtils.iml" filepath="$PROJECT_DIR$/035-xUtils/035-xUtils.iml" />
       <module fileurl="file://$PROJECT_DIR$/036-创建第二个Activity/036-创建第二个Activity.iml" filepath="$PROJECT_DIR$/036-创建第二个Activity/036-创建第二个Activity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/037-Activity的跳转/037-Activity的跳转.iml" filepath="$PROJECT_DIR$/037-Activity的跳转/037-Activity的跳转.iml" />
     </modules>
   </component>
 </project>
