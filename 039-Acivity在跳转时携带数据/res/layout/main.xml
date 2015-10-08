@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="这是姻缘计算器，很准和哟"
+            />
+    <EditText
+            android:id="@+id/et_malemname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="李志"
+            />
+    <EditText
+            android:id="@+id/et_femalemname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="芙蓉姐姐"
+            />
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="计算"
+            android:onClick="click"
+            />
+</LinearLayout>
+
