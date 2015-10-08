@@ -90,4 +90,26 @@ public class MainActivity extends Activity {
         intent.addCategory(Intent.CATEGORY_DEFAULT);
         startActivity(intent);
     }
+
+    /**
+     * 显示跳转至浏览器
+     *
+     * @param view
+     */
+    public void click6(View view) {
+        Intent intent = new Intent();
+        intent.setClassName("com.android.browser", "com.android.browser.BrowserActivity");
+        startActivity(intent);
+    }
+
+    /**
+     * 隐示跳转至浏览器
+     * @param view
+     */
+    public void click7(View view) {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("http://www.baidu.com"));
+        startActivity(intent);
+    }
 }

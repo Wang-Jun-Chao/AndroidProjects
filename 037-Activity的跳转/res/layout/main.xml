@@ -35,5 +35,18 @@
             android:layout_height="wrap_content"
             android:text="隐示跳转至SenondActivity"
             android:onClick="click5"/>
+
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="显示跳转至浏览器"
+            android:onClick="click6"/>
+
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="隐示跳转至浏览器"
+            android:onClick="click7"/>
+
 </LinearLayout>
 
