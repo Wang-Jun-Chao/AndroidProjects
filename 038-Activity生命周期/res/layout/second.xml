@@ -9,4 +9,8 @@
             android:layout_height="wrap_content"
             android:text="第二个Activity"
             />
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="点我惊醒"/>
 </LinearLayout>
