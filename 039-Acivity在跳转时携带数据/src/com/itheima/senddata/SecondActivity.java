@@ -21,11 +21,21 @@ public class SecondActivity extends Activity {
 
         Intent intent = getIntent();
         // 从Intent对象中取出封装好的数据
-        String maleName = intent.getStringExtra("malename");
-        String femaleName = intent.getStringExtra("femalename");
+//        String maleName = intent.getStringExtra("malename");
+//        String femaleName = intent.getStringExtra("femalename");
+
+        Bundle bundle = intent.getExtras();
+        String maleName = bundle.getString("malename");
+        String femaleName = bundle.getString("femalename");
+
 
         Random rd = new Random();
         int yinyuan = rd.nextInt(99);
+
+        if ("zk".equals(maleName) && "xxx".equals(femaleName)) {
+            yinyuan = 199;
+        }
+
         TextView tv = (TextView) findViewById(R.id.tv);
         tv.setText(maleName + "和" + femaleName + "的姻缘值为：" + yinyuan);
 

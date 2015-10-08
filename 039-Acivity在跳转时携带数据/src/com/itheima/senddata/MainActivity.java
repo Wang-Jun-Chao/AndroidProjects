@@ -19,8 +19,15 @@ public class MainActivity extends Activity {
         Intent intent = new Intent();
 
         // 把数据封装至Intent对象中
-        intent.putExtra("malename", "李志");
-        intent.putExtra("femalename", "芙蓉姐姐");
+//        intent.putExtra("malename", "李志");
+//        intent.putExtra("femalename", "芙蓉姐姐");
+
+        // 把数据封闭至Bundle对象中
+        Bundle bundle = new Bundle();
+        bundle.putString("malename", "李志");
+        bundle.putString("femalename", "芙蓉姐姐");
+        // 把Bundle对象封装至Intent对象中
+        intent.putExtras(bundle);
 
         intent.setClass(this, SecondActivity.class);
 
