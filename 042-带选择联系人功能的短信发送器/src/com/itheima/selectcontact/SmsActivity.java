@@ -11,19 +11,21 @@ import android.widget.ListView;
 /**
  * Author: 王俊超
  * Date: 2015-10-09
- * Time: 11:47
+ * Time: 20:26
  * Declaration: All Rights Reserved !!!
  */
-public class ContactActivity extends Activity {
+public class SmsActivity extends Activity {
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.contact);
 
         ListView lv = (ListView) findViewById(R.id.lv);
 
-        //虚构几个联系人
-        final String[] objects = {"芙蓉姐姐", "位争的芙蓉姐姐", "芙蓉姐姐的们争", "福尔马林"};
+        //虚构几条短信
+        final String[] objects = {"正在开会，请稍后",
+                "正在吃饭，别吵吵",
+                "正在办正事，请勿打扰"};
         lv.setAdapter(new ArrayAdapter<String>(this, R.layout.item_contact, R.id.tv, objects));
 
         // 对ListView条目进行点击侦听
@@ -33,11 +35,12 @@ public class ContactActivity extends Activity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent data = new Intent();
                 // 把要传递的数据封闭至Intent对象
-                data.putExtra("name", objects[i]);
+                data.putExtra("content", objects[i]);
                 // 此Activity一旦销毁，这个data就会传递到此Activity的调用者
                 setResult(0, data);
                 finish();
             }
         });
+
     }
 }
