@@ -9,6 +9,7 @@
             android:layout_height="wrap_content"
             android:text="这是主Activity"
             android:textSize="18sp"
+            android:textColor="#0000ff"
             />
     <Button
             android:layout_width="fill_parent"
