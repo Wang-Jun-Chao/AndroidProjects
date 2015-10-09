@@ -19,7 +19,7 @@ public class MainActivity extends Activity {
     public void click(View view) {
         EditText et = (EditText) findViewById(R.id.et);
         SharedPreferences sp = getSharedPreferences("ip", MODE_PRIVATE);
-        sp.edit().putString("ipNumber", et.getText().toString());
+        sp.edit().putString("ipNumber", et.getText().toString()).commit();
 
     }
 }

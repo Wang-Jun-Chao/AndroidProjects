@@ -8,7 +8,7 @@
             android:id="@+id/et"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="请输入IP线路"
+            android:hint="请输入IP线路"
             />
     <Button
             android:layout_width="fill_parent"
