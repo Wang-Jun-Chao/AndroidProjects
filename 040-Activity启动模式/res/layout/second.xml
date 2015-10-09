@@ -3,5 +3,21 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="这是第二个Activity"
+            android:textSize="18sp"
+            />
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="启动主Activity"
+            android:onClick="click1"/>
 
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="启动第二个Activity"
+            android:onClick="click2"/>
 </LinearLayout>
