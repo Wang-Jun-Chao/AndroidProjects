@@ -45,6 +45,7 @@
       <module fileurl="file://$PROJECT_DIR$/038-Activity生命周期/038-Activity生命周期.iml" filepath="$PROJECT_DIR$/038-Activity生命周期/038-Activity生命周期.iml" />
       <module fileurl="file://$PROJECT_DIR$/039-Acivity在跳转时携带数据/039-Acivity在跳转时携带数据.iml" filepath="$PROJECT_DIR$/039-Acivity在跳转时携带数据/039-Acivity在跳转时携带数据.iml" />
       <module fileurl="file://$PROJECT_DIR$/040-Activity启动模式/040-Activity启动模式.iml" filepath="$PROJECT_DIR$/040-Activity启动模式/040-Activity启动模式.iml" />
+      <module fileurl="file://$PROJECT_DIR$/041-Activity横竖屏切换/041-Activity横竖屏切换.iml" filepath="$PROJECT_DIR$/041-Activity横竖屏切换/041-Activity横竖屏切换.iml" />
     </modules>
   </component>
 </project>
