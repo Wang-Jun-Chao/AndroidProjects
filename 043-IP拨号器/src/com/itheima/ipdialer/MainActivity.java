@@ -1,8 +1,10 @@
 package com.itheima.ipdialer;
 
 import android.app.Activity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 public class MainActivity extends Activity {
     /**
@@ -15,5 +17,9 @@ public class MainActivity extends Activity {
     }
 
     public void click(View view) {
+        EditText et = (EditText) findViewById(R.id.et);
+        SharedPreferences sp = getSharedPreferences("ip", MODE_PRIVATE);
+        sp.edit().putString("ipNumber", et.getText().toString());
+
     }
 }
