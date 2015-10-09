@@ -41,7 +41,6 @@ public class MainActivity extends Activity {
         super.onActivityResult(requestCode, resultCode, data);
 
         System.out.println(requestCode + ":" + resultCode);
-        System.out.println(data.getStringExtra("name"));
 
         if (requestCode == CONTACT_LIST) {
             EditText et_name = (EditText) findViewById(R.id.et_name);
