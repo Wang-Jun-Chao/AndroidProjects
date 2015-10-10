@@ -13,6 +13,8 @@ import android.content.Intent;
 public class ShiZF extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
-
+        String text = getResultData();
+        System.out.println("市政府收到文件：" + text);
+        abortBroadcast();
     }
 }

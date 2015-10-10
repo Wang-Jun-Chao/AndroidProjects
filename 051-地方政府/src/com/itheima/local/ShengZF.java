@@ -13,6 +13,8 @@ import android.content.Intent;
 public class ShengZF extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
-
+        String text = getResultData();
+        System.out.println("省政府收到文件：" + text);
+        setResultData("每个发80斤大米");
     }
 }
