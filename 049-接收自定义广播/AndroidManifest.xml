@@ -12,5 +12,10 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <receiver android:name=".CustomerReceiver">
+            <intent-filter>
+                <action android:name="com.itheima.sendcustomer"/>
+            </intent-filter>
+        </receiver>
     </application>
 </manifest>
