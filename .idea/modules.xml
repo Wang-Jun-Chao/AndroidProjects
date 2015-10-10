@@ -54,6 +54,8 @@
       <module fileurl="file://$PROJECT_DIR$/047-监控应用的状态/047-监控应用的状态.iml" filepath="$PROJECT_DIR$/047-监控应用的状态/047-监控应用的状态.iml" />
       <module fileurl="file://$PROJECT_DIR$/048-发送自定义广播/048-发送自定义广播.iml" filepath="$PROJECT_DIR$/048-发送自定义广播/048-发送自定义广播.iml" />
       <module fileurl="file://$PROJECT_DIR$/049-接收自定义广播/049-接收自定义广播.iml" filepath="$PROJECT_DIR$/049-接收自定义广播/049-接收自定义广播.iml" />
+      <module fileurl="file://$PROJECT_DIR$/050-中央政府/050-中央政府.iml" filepath="$PROJECT_DIR$/050-中央政府/050-中央政府.iml" />
+      <module fileurl="file://$PROJECT_DIR$/051-地方政府/051-地方政府.iml" filepath="$PROJECT_DIR$/051-地方政府/051-地方政府.iml" />
     </modules>
   </component>
 </project>
