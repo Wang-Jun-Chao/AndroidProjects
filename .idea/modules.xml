@@ -56,6 +56,7 @@
       <module fileurl="file://$PROJECT_DIR$/049-接收自定义广播/049-接收自定义广播.iml" filepath="$PROJECT_DIR$/049-接收自定义广播/049-接收自定义广播.iml" />
       <module fileurl="file://$PROJECT_DIR$/050-中央政府/050-中央政府.iml" filepath="$PROJECT_DIR$/050-中央政府/050-中央政府.iml" />
       <module fileurl="file://$PROJECT_DIR$/051-地方政府/051-地方政府.iml" filepath="$PROJECT_DIR$/051-地方政府/051-地方政府.iml" />
+      <module fileurl="file://$PROJECT_DIR$/052-模拟下载/052-模拟下载.iml" filepath="$PROJECT_DIR$/052-模拟下载/052-模拟下载.iml" />
     </modules>
   </component>
 </project>
