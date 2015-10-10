@@ -51,6 +51,7 @@
       <module fileurl="file://$PROJECT_DIR$/044-短信防火墙/044-短信防火墙.iml" filepath="$PROJECT_DIR$/044-短信防火墙/044-短信防火墙.iml" />
       <module fileurl="file://$PROJECT_DIR$/045-监听SD卡状态/045-监听SD卡状态.iml" filepath="$PROJECT_DIR$/045-监听SD卡状态/045-监听SD卡状态.iml" />
       <module fileurl="file://$PROJECT_DIR$/046-手机勒索软件/046-手机勒索软件.iml" filepath="$PROJECT_DIR$/046-手机勒索软件/046-手机勒索软件.iml" />
+      <module fileurl="file://$PROJECT_DIR$/047-监控应用的状态/047-监控应用的状态.iml" filepath="$PROJECT_DIR$/047-监控应用的状态/047-监控应用的状态.iml" />
     </modules>
   </component>
 </project>
