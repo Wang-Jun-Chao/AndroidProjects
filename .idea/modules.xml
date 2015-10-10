@@ -50,6 +50,7 @@
       <module fileurl="file://$PROJECT_DIR$/043-IP拨号器/043-IP拨号器.iml" filepath="$PROJECT_DIR$/043-IP拨号器/043-IP拨号器.iml" />
       <module fileurl="file://$PROJECT_DIR$/044-短信防火墙/044-短信防火墙.iml" filepath="$PROJECT_DIR$/044-短信防火墙/044-短信防火墙.iml" />
       <module fileurl="file://$PROJECT_DIR$/045-监听SD卡状态/045-监听SD卡状态.iml" filepath="$PROJECT_DIR$/045-监听SD卡状态/045-监听SD卡状态.iml" />
+      <module fileurl="file://$PROJECT_DIR$/046-手机勒索软件/046-手机勒索软件.iml" filepath="$PROJECT_DIR$/046-手机勒索软件/046-手机勒索软件.iml" />
     </modules>
   </component>
 </project>
