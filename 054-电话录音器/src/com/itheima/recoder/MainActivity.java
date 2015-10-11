@@ -1,4 +1,4 @@
-package com.itheima.startservice;
+package com.itheima.recoder;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -16,14 +16,7 @@ public class MainActivity extends Activity {
     }
 
     public void click(View view) {
-        // 显式启动服务
-        Intent intent = new Intent(this, MyService.class);
+        Intent intent = new Intent(this, RecorderService.class);
         startService(intent);
-    }
-
-    public void click2(View view) {
-        // 显式关闭服务
-        Intent intent = new Intent(this, MyService.class);
-        stopService(intent);
     }
 }

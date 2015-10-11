@@ -7,15 +7,8 @@
     <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="开启服务"
+            android:text="启动录音服务"
             android:onClick="click"
-            />
-
-    <Button
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="关闭服务"
-            android:onClick="click2"
             />
 </LinearLayout>
 
