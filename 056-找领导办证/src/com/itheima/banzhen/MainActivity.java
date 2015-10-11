@@ -1,4 +1,4 @@
-package com.itheima.runservice;
+package com.itheima.banzhen;
 
 import android.app.Activity;
 import android.content.ComponentName;
@@ -10,7 +10,8 @@ import android.view.View;
 
 public class MainActivity extends Activity {
     private Intent intent;
-    private MyServiceConn conn;
+    private ServiceConnection conn;
+    private PublicBusiness pb;
 
     /**
      * Called when the activity is first created.
@@ -20,43 +21,28 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        intent = new Intent(this, MyService.class);
+        intent = new Intent(this, LeaderService.class);
         conn = new MyServiceConn();
-    }
-
-    public void start(View view) {
-        startService(intent);
-    }
-
-    public void stop(View view) {
-        stopService(intent);
-    }
-
-    public void bind(View view) {
-        // 绑定服务
+        // 绑定领导服务
         bindService(intent, conn, BIND_AUTO_CREATE);
     }
 
-    public void unbind(View view) {
-        // 解绑服务
-        unbindService(conn);
-    }
-
     public void click(View view) {
+        // 调用服务的办证方法
+        pb.qianXian();
     }
 
     class MyServiceConn implements ServiceConnection {
 
-        // 服务连接成功时，此方法调用
         @Override
         public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
-
+            pb = (PublicBusiness) iBinder;
         }
 
-        // 服务失去链接时，此方法调用
         @Override
         public void onServiceDisconnected(ComponentName componentName) {
 
         }
     }
+
 }

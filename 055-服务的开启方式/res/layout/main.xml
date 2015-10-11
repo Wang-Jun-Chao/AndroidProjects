@@ -28,5 +28,12 @@
             android:text="解绑服务"
             android:onClick="unbind"
             />
+
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="调用a方法"
+            android:onClick="click"
+            />
 </LinearLayout>
 

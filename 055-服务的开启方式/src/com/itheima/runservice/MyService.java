@@ -1,7 +1,9 @@
 package com.itheima.runservice;
 
 import android.app.Service;
+import android.content.ComponentName;
 import android.content.Intent;
+import android.content.ServiceConnection;
 import android.os.IBinder;
 
 /**
@@ -41,5 +43,9 @@ public class MyService extends Service {
     public void onDestroy() {
         super.onDestroy();
         System.out.println("MyService.onDestroy");
+    }
+
+    public void a() {
+        System.out.println("可爱的小胖子");
     }
 }
