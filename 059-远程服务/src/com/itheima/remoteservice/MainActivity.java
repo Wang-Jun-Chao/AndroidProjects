@@ -1,4 +1,4 @@
-package com.remoteservice;
+package com.itheima.remoteservice;
 
 import android.app.Activity;
 import android.os.Bundle;

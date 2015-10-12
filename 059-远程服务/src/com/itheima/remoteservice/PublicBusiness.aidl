@@ -1,4 +1,4 @@
-package com.remoteservice;
+package com.itheima.remoteservice;
 
 interface PublicBusiness {
     void qianXian();

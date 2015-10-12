@@ -1,16 +1,20 @@
 package com.itheima.runremote;
 
+
 import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
+import android.os.RemoteException;
 import android.view.View;
+import com.itheima.remoteservice.PublicBusiness;
 
 public class MainActivity extends Activity {
 
     private MyServiceConn conn;
+    private PublicBusiness pb;
 
     /**
      * Called when the activity is first created.
@@ -47,11 +51,20 @@ public class MainActivity extends Activity {
         unbindService(conn);
     }
 
+    public void click5(View view) {
+        try {
+            pb.qianXian();
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+    }
+
     class MyServiceConn implements ServiceConnection {
 
         @Override
         public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
-
+            // 把中间人对象强转为PublicBusiness对象
+            pb = PublicBusiness.Stub.asInterface(iBinder);
         }
 
         @Override

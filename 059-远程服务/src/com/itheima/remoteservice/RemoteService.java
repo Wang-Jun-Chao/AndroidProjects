@@ -1,9 +1,7 @@
-package com.remoteservice;
+package com.itheima.remoteservice;
 
 import android.app.Service;
 import android.content.Intent;
-import android.content.ServiceConnection;
-import android.os.Binder;
 import android.os.IBinder;
 
 /**
@@ -47,16 +45,11 @@ public class RemoteService extends Service {
         System.out.println("李局来帮你办证");
     }
 
-    class FuRong extends Binder implements PublicBusiness {
+    class FuRong extends PublicBusiness.Stub {
 
         @Override
         public void qianXian() {
             banZheng();
-        }
-
-        @Override
-        public IBinder asBinder() {
-            return null;
         }
     }
 }

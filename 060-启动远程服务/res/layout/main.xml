@@ -28,5 +28,12 @@
             android:text="解绑远程服务"
             android:onClick="click4"
             />
+
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="远程办证"
+            android:onClick="click5"
+            />
 </LinearLayout>
 
