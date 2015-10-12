@@ -34,7 +34,7 @@ public class MusicService extends Service {
 
         @Override
         public void pause() {
-            MusicService.this.play();
+            MusicService.this.pause();
         }
     }
 }

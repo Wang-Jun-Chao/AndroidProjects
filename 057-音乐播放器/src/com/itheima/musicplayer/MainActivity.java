@@ -21,6 +21,10 @@ public class MainActivity extends Activity {
         setContentView(R.layout.main);
 
         Intent intent = new Intent(this, MusicService.class);
+        // 混合调用
+        // 为了把服务变成服务进程
+        startService(intent);
+        // 为了拿到中间人对象
         bindService(intent, new MusicServiceConn(), BIND_AUTO_CREATE);
     }
 
