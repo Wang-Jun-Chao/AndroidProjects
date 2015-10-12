@@ -63,6 +63,8 @@
       <module fileurl="file://$PROJECT_DIR$/056-找领导办证/056-找领导办证.iml" filepath="$PROJECT_DIR$/056-找领导办证/056-找领导办证.iml" />
       <module fileurl="file://$PROJECT_DIR$/057-音乐播放器/057-音乐播放器.iml" filepath="$PROJECT_DIR$/057-音乐播放器/057-音乐播放器.iml" />
       <module fileurl="file://$PROJECT_DIR$/058-使用服务注册广播接收者/058-使用服务注册广播接收者.iml" filepath="$PROJECT_DIR$/058-使用服务注册广播接收者/058-使用服务注册广播接收者.iml" />
+      <module fileurl="file://$PROJECT_DIR$/059-远程服务/059-远程服务.iml" filepath="$PROJECT_DIR$/059-远程服务/059-远程服务.iml" />
+      <module fileurl="file://$PROJECT_DIR$/060-启动远程服务/060-启动远程服务.iml" filepath="$PROJECT_DIR$/060-启动远程服务/060-启动远程服务.iml" />
     </modules>
   </component>
 </project>
