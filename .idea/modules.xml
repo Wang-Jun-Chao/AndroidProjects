@@ -65,6 +65,7 @@
       <module fileurl="file://$PROJECT_DIR$/058-使用服务注册广播接收者/058-使用服务注册广播接收者.iml" filepath="$PROJECT_DIR$/058-使用服务注册广播接收者/058-使用服务注册广播接收者.iml" />
       <module fileurl="file://$PROJECT_DIR$/059-远程服务/059-远程服务.iml" filepath="$PROJECT_DIR$/059-远程服务/059-远程服务.iml" />
       <module fileurl="file://$PROJECT_DIR$/060-启动远程服务/060-启动远程服务.iml" filepath="$PROJECT_DIR$/060-启动远程服务/060-启动远程服务.iml" />
+      <module fileurl="file://$PROJECT_DIR$/061-支付小胖子/061-支付小胖子.iml" filepath="$PROJECT_DIR$/061-支付小胖子/061-支付小胖子.iml" />
     </modules>
   </component>
 </project>
