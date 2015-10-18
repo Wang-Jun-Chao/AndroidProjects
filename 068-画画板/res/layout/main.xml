@@ -4,10 +4,28 @@
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
         >
-    <TextView
-            android:layout_width="fill_parent"
+    <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World, MainActivity"
+            android:src="@drawable/bg"
             />
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="红色"
+                android:onClick="red"/>
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="绿色"
+                android:onClick="green"/>
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="刷子"
+                android:onClick="brush"/>
+    </LinearLayout>
 </LinearLayout>
 
