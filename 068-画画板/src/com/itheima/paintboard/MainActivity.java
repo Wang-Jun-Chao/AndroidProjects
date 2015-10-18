@@ -1,11 +1,19 @@
 package com.itheima.paintboard;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.*;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 public class MainActivity extends Activity {
     private ImageView iv;
@@ -82,5 +90,25 @@ public class MainActivity extends Activity {
 
     public void brush(View view) {
         paint.setStrokeWidth(7);
+    }
+
+    public void save(View view) {
+        try {
+            File file = new File("/sdcard/dazuo.png");
+            FileOutputStream fos = new FileOutputStream(file);
+            bmCopy.compress(Bitmap.CompressFormat.PNG, 100, fos);
+            fos.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        // 发送SD卡就绪广播
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_MEDIA_MOUNTED);
+        intent.setData(Uri.fromFile(Environment.getExternalStorageDirectory()));
+        sendBroadcast(intent);
+
     }
 }

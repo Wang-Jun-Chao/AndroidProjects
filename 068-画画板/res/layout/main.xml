@@ -26,6 +26,10 @@
                 android:layout_height="wrap_content"
                 android:text="刷子"
                 android:onClick="brush"/>
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保存"
+                android:onClick="save"/>
     </LinearLayout>
 </LinearLayout>
 
