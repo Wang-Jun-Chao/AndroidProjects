@@ -1,4 +1,4 @@
-package com.itheima.imagecopy;
+package com.itheima.picture;
 
 import android.app.Activity;
 import android.graphics.*;
@@ -25,8 +25,24 @@ public class MainActivity extends Activity {
         // 3、创建画板对象，把白纸铺在画板上
         Canvas canvas = new Canvas(bmCopy);
         // 4、开始作画，把原图的内容绘制在白纸上
-        canvas.drawBitmap(bmSrc, new Matrix(), paint);
+        Matrix mt = new Matrix();
 
+        // 平移
+//        mt.setTranslate(20, 40);
+        // 缩放
+//        mt.setScale(2, 0.5F);
+//        mt.setScale(0.5F, 0.5F, bmCopy.getWidth() / 2, bmCopy.getHeight() / 2);
+        // 旋转
+//        mt.setRotate(45, bmCopy.getWidth() / 2, bmCopy.getHeight() / 2);
+        // 镜面
+//        mt.setScale(-1, 1);
+//        mt.postTranslate(bmCopy.getWidth(), 0);
+        // 镜面
+        mt.setScale(1, -1);
+        mt.postTranslate(0, bmCopy.getHeight());
+        canvas.drawBitmap(bmSrc, mt, paint);
+
+        canvas.drawLine(10, 10, 40, 40, paint);
         ImageView iv_src = (ImageView) findViewById(R.id.iv_src);
         ImageView iv_copy = (ImageView) findViewById(R.id.iv_copy);
         iv_src.setImageBitmap(bmSrc);

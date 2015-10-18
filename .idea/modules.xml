@@ -71,6 +71,8 @@
       <module fileurl="file://$PROJECT_DIR$/064-国际化/064-国际化.iml" filepath="$PROJECT_DIR$/064-国际化/064-国际化.iml" />
       <module fileurl="file://$PROJECT_DIR$/065-加载大图片/065-加载大图片.iml" filepath="$PROJECT_DIR$/065-加载大图片/065-加载大图片.iml" />
       <module fileurl="file://$PROJECT_DIR$/066-创建图片拷贝/066-创建图片拷贝.iml" filepath="$PROJECT_DIR$/066-创建图片拷贝/066-创建图片拷贝.iml" />
+      <module fileurl="file://$PROJECT_DIR$/067-图片简单特效/067-图片简单特效.iml" filepath="$PROJECT_DIR$/067-图片简单特效/067-图片简单特效.iml" />
+      <module fileurl="file://$PROJECT_DIR$/068-画画板/068-画画板.iml" filepath="$PROJECT_DIR$/068-画画板/068-画画板.iml" />
     </modules>
   </component>
 </project>
