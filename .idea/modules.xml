@@ -74,6 +74,8 @@
       <module fileurl="file://$PROJECT_DIR$/067-图片简单特效/067-图片简单特效.iml" filepath="$PROJECT_DIR$/067-图片简单特效/067-图片简单特效.iml" />
       <module fileurl="file://$PROJECT_DIR$/068-画画板/068-画画板.iml" filepath="$PROJECT_DIR$/068-画画板/068-画画板.iml" />
       <module fileurl="file://$PROJECT_DIR$/069-撕衣服/069-撕衣服.iml" filepath="$PROJECT_DIR$/069-撕衣服/069-撕衣服.iml" />
+      <module fileurl="file://$PROJECT_DIR$/074-自定义内容提供者/074-自定义内容提供者.iml" filepath="$PROJECT_DIR$/074-自定义内容提供者/074-自定义内容提供者.iml" />
+      <module fileurl="file://$PROJECT_DIR$/075-访问自定义内容提供者/075-访问自定义内容提供者.iml" filepath="$PROJECT_DIR$/075-访问自定义内容提供者/075-访问自定义内容提供者.iml" />
     </modules>
   </component>
 </project>

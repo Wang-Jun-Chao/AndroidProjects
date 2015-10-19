@@ -2,7 +2,7 @@
 
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: C:\\Users\\admin\\IdeaProjects\\AndroidProjects\\060-启动远程服务\\src\\com\\itheima\\remoteservice\\PublicBusiness.aidl
+ * Original file: D:\\IdeaProjects\\AndroidProjects\\060-启动远程服务\\src\\com\\itheima\\remoteservice\\PublicBusiness.aidl
  */
 package com.itheima.remoteservice;
 public interface PublicBusiness extends android.os.IInterface
