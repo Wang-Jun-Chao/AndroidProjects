@@ -2,7 +2,7 @@
 
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: D:\\IdeaProjects\\AndroidProjects\\061-支付小胖子\\src\\com\\itheima\\alipay\\PayInterface.aidl
+ * Original file: C:\\Users\\admin\\IdeaProjects\\AndroidProjects\\061-支付小胖子\\src\\com\\itheima\\alipay\\PayInterface.aidl
  */
 package com.itheima.alipay;
 /**
