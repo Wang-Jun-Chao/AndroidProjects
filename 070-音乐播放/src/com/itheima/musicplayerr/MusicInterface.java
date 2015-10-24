@@ -10,4 +10,5 @@ interface MusicInterface {
     void play();
     void continuePlay();
     void pause();
+    void seekTo(int progress);
 }

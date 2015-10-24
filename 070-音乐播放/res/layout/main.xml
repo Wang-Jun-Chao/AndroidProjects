@@ -28,5 +28,10 @@
             android:text="退出"
             android:onClick="exist"
             />
+    <SeekBar
+            android:id="@+id/sb"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
 </LinearLayout>
 

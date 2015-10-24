@@ -3,11 +3,11 @@ package com.itheima.musicplayerr;
 import android.app.Service;
 import android.content.Intent;
 import android.media.MediaPlayer;
-import android.os.Binder;
-import android.os.IBinder;
-import android.os.RemoteException;
+import android.os.*;
 
 import java.io.IOException;
+import java.util.Timer;
+import java.util.TimerTask;
 
 /**
  * Author: 王俊超
@@ -17,6 +17,7 @@ import java.io.IOException;
  */
 public class MusicService extends Service {
     private MediaPlayer player;
+    private Timer timer;
 
     @Override
     public IBinder onBind(Intent intent) {
@@ -36,6 +37,12 @@ public class MusicService extends Service {
         player.stop();
         // 释放占用资源，此时player对象已经废掉了
         player.release();
+        player = null;
+        if (timer != null) {
+            timer.cancel();
+            timer = null;
+        }
+
     }
 
     // 播放音乐
@@ -46,7 +53,19 @@ public class MusicService extends Service {
             // 加载多媒体文件
             player.setDataSource("/sdcard/mylove.mp3");
             player.prepare();
-            player.start();
+//            player.start();
+
+
+//            player.setDataSource("http://192.168.2.120:8080/mylove.mp3");
+//            player.prepareAsync();
+            player.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+                // 准备完毕 ，此方法调用
+                @Override
+                public void onPrepared(MediaPlayer mediaPlayer) {
+                    player.start();
+                    addTimer();
+                }
+            });
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -60,6 +79,39 @@ public class MusicService extends Service {
     // 暂停播放
     public void pause() {
         player.pause();
+    }
+
+    public void seekTo(int progress) {
+        player.seekTo(progress);
+    }
+
+    // 获取持续时间
+    public void addTimer() {
+
+        // 已经创建过和Timer对象就不再创建对象了
+        if (timer != null) {
+            return;
+        }
+
+        timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                // 获取歌曲的总时长
+                int duration = player.getDuration();
+                // 获取当前播放进度
+                int currentPosition = player.getCurrentPosition();
+                Message msg = MainActivity.handler.obtainMessage();
+                // 把消息封装至消息对象中
+                Bundle bundle = new Bundle();
+                bundle.putInt("duration", duration);
+                bundle.putInt("currentPosition", currentPosition);
+                msg.setData(bundle);
+                MainActivity.handler.sendMessage(msg);
+
+            }
+            // 开始计时任务后的5毫秒，第一次执行run方法，以后每500毫秒执行一次
+        }, 5, 500);
     }
 
     class MusicController extends Binder implements MusicInterface {
@@ -77,6 +129,11 @@ public class MusicService extends Service {
         @Override
         public void pause() {
             MusicService.this.pause();
+        }
+
+        @Override
+        public void seekTo(int progress) {
+            MusicService.this.seekTo(progress);
         }
 
     }
