@@ -23,23 +23,25 @@ public class MainActivity extends Activity {
         // 拿到ContentResolver
         ContentResolver cr = getContentResolver();
         ContentValues values = new ContentValues();
-        values.put("name", "小明");
-        values.put("money", 13000);
+//        values.put("name", "小明");
+//        values.put("money", 13000);
+        values.put("name", "赵日天");
         // url: 内容提供者的主要名
         // values: 要插入的数据
-        cr.insert(Uri.parse("content://com.itheima.people"), values);
+//        cr.insert(Uri.parse("content://com.itheima.people"), values);
+        cr.insert(Uri.parse("content://com.itheima.people/teacher"), values);
 
-        values.put("name", "中明");
-        values.put("money", 13000);
-        cr.insert(Uri.parse("content://com.itheima.people"), values);
-
-        values.put("name", "大明");
-        values.put("money", 13000);
-        cr.insert(Uri.parse("content://com.itheima.people"), values);
-
-        values.put("name", "2B明");
-        values.put("money", 13000);
-        cr.insert(Uri.parse("content://com.itheima.people"), values);
+//        values.put("name", "中明");
+//        values.put("money", 13000);
+//        cr.insert(Uri.parse("content://com.itheima.people"), values);
+//
+//        values.put("name", "大明");
+//        values.put("money", 13000);
+//        cr.insert(Uri.parse("content://com.itheima.people"), values);
+//
+//        values.put("name", "2B明");
+//        values.put("money", 13000);
+//        cr.insert(Uri.parse("content://com.itheima.people"), values);
     }
 
     public void delete(View view) {
@@ -58,7 +60,7 @@ public class MainActivity extends Activity {
 
     public void query(View view) {
         ContentResolver cr = getContentResolver();
-        Cursor cursor = cr.query(Uri.parse("content://com.itheima.people"), null, null, null, null);
+        Cursor cursor = cr.query(Uri.parse("content://com.itheima.people/person/4"), null, null, null, null);
         while (cursor.moveToNext()) {
             String name = cursor.getString(1);
             String money = cursor.getString(2);

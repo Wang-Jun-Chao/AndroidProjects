@@ -81,6 +81,10 @@
       <module fileurl="file://$PROJECT_DIR$/073-摄像头/073-摄像头.iml" filepath="$PROJECT_DIR$/073-摄像头/073-摄像头.iml" />
       <module fileurl="file://$PROJECT_DIR$/074-自定义内容提供者/074-自定义内容提供者.iml" filepath="$PROJECT_DIR$/074-自定义内容提供者/074-自定义内容提供者.iml" />
       <module fileurl="file://$PROJECT_DIR$/075-访问自定义内容提供者/075-访问自定义内容提供者.iml" filepath="$PROJECT_DIR$/075-访问自定义内容提供者/075-访问自定义内容提供者.iml" />
+      <module fileurl="file://$PROJECT_DIR$/076-获取系统短信/076-获取系统短信.iml" filepath="$PROJECT_DIR$/076-获取系统短信/076-获取系统短信.iml" />
+      <module fileurl="file://$PROJECT_DIR$/077-插入系统短信/077-插入系统短信.iml" filepath="$PROJECT_DIR$/077-插入系统短信/077-插入系统短信.iml" />
+      <module fileurl="file://$PROJECT_DIR$/078-查询联系人/078-查询联系人.iml" filepath="$PROJECT_DIR$/078-查询联系人/078-查询联系人.iml" />
+      <module fileurl="file://$PROJECT_DIR$/079-插入联系人/079-插入联系人.iml" filepath="$PROJECT_DIR$/079-插入联系人/079-插入联系人.iml" />
     </modules>
   </component>
 </project>

@@ -1,7 +1,9 @@
 package com.itheima.customcontentprovider.provider;
 
 import android.content.ContentProvider;
+import android.content.ContentUris;
 import android.content.ContentValues;
+import android.content.UriMatcher;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
@@ -16,6 +18,15 @@ import com.itheima.customcontentprovider.MyOpenHelper;
 public class PersonProvider extends ContentProvider {
     private MyOpenHelper oh;
     private SQLiteDatabase db;
+    // 创建Uri匹配器对象
+    private static UriMatcher um = new UriMatcher(UriMatcher.NO_MATCH);
+
+    // 检测其它用户输入的uri与匹配器中的哪条uri匹配
+    static {
+        um.addURI("com.itheima.people", "person", 1);
+        um.addURI("com.itheima.people", "teacher", 2);
+        um.addURI("com.itheima.people", "person/#", 3);
+    }
 
     // 内容提供者创建时调用
     @Override
@@ -27,11 +38,28 @@ public class PersonProvider extends ContentProvider {
 
     @Override
     public Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs, String sortOrder) {
-       return db.query("person", projection, selection, selectionArgs, null, null, sortOrder, null);
+
+        if (um.match(uri) == 1) {
+            return db.query("person", projection, selection, selectionArgs, null, null, sortOrder, null);
+        } else if (um.match(uri) == 2) {
+            return db.query("teacher", projection, selection, selectionArgs, null, null, sortOrder, null);
+        } else if (um.match(uri) == 3) {
+            // 把uri末尾携带的数字取出来
+            long id = ContentUris.parseId(uri);
+            return db.query("person", projection, "_id=?", new String[]{id + ""}, null, null, sortOrder, null);
+        } else {
+            throw new IllegalArgumentException("uri有问题");
+        }
     }
 
     @Override
     public String getType(Uri uri) {
+
+        if (um.match(uri) == 1) {
+            return   "vnd.android.cursor.dir/person";
+        } else if (um.match(uri) == 3) {
+            return "vnd.android.cursor.item/person";
+        }
 
         return null;
     }
@@ -41,7 +69,14 @@ public class PersonProvider extends ContentProvider {
     // uri: 内容提供者的主机名，也就是地址
     @Override
     public Uri insert(Uri uri, ContentValues values) {
-        db.insert("person", null, values);
+        // 使用匹配器匹配传入的uri
+        if (um.match(uri) == 1) {
+            db.insert("person", null, values);
+        } else if (um.match(uri) == 2) {
+            db.insert("teacher", null, values);
+        } else {
+            throw new IllegalArgumentException("uri有问题");
+        }
         return uri;
     }
 

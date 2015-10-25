@@ -12,7 +12,7 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 public class MyOpenHelper extends SQLiteOpenHelper {
     public MyOpenHelper(Context context) {
-        super(context, "person.db", null, 1);
+        super(context, "person.db", null, 2);
     }
 
     @Override
@@ -22,6 +22,6 @@ public class MyOpenHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
+        db.execSQL("CREATE TABLE teacher(_id integer PRIMARY KEY AUTOINCREMENT, name CHAR(10))");
     }
 }
