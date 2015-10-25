@@ -78,6 +78,7 @@
       <module fileurl="file://$PROJECT_DIR$/071-播放视频/071-播放视频.iml" filepath="$PROJECT_DIR$/071-播放视频/071-播放视频.iml" />
       <module fileurl="file://$PROJECT_DIR$/072-VideoView/072-VideoView.iml" filepath="$PROJECT_DIR$/072-VideoView/072-VideoView.iml" />
       <module fileurl="file://$PROJECT_DIR$/072-VitamioLib/072-VitamioLib.iml" filepath="$PROJECT_DIR$/072-VitamioLib/072-VitamioLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/073-摄像头/073-摄像头.iml" filepath="$PROJECT_DIR$/073-摄像头/073-摄像头.iml" />
       <module fileurl="file://$PROJECT_DIR$/074-自定义内容提供者/074-自定义内容提供者.iml" filepath="$PROJECT_DIR$/074-自定义内容提供者/074-自定义内容提供者.iml" />
       <module fileurl="file://$PROJECT_DIR$/075-访问自定义内容提供者/075-访问自定义内容提供者.iml" filepath="$PROJECT_DIR$/075-访问自定义内容提供者/075-访问自定义内容提供者.iml" />
     </modules>
