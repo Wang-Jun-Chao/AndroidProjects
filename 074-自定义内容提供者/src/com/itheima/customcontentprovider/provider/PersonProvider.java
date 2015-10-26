@@ -72,8 +72,13 @@ public class PersonProvider extends ContentProvider {
         // 使用匹配器匹配传入的uri
         if (um.match(uri) == 1) {
             db.insert("person", null, values);
+
+            // 发送数据改变通知
+            // uri:通知发送到哪个uri上，所有注册到这个uri上的内容观察者都可以接收到这个通知
+            getContext().getContentResolver().notifyChange(uri, null);
         } else if (um.match(uri) == 2) {
             db.insert("teacher", null, values);
+            getContext().getContentResolver().notifyChange(uri, null);
         } else {
             throw new IllegalArgumentException("uri有问题");
         }
