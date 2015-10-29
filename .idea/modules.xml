@@ -87,6 +87,7 @@
       <module fileurl="file://$PROJECT_DIR$/079-插入联系人/079-插入联系人.iml" filepath="$PROJECT_DIR$/079-插入联系人/079-插入联系人.iml" />
       <module fileurl="file://$PROJECT_DIR$/080-内容观察者/080-内容观察者.iml" filepath="$PROJECT_DIR$/080-内容观察者/080-内容观察者.iml" />
       <module fileurl="file://$PROJECT_DIR$/081-监听074项目数据库发生改变的通知/081-监听074项目数据库发生改变的通知.iml" filepath="$PROJECT_DIR$/081-监听074项目数据库发生改变的通知/081-监听074项目数据库发生改变的通知.iml" />
+      <module fileurl="file://$PROJECT_DIR$/082-Fragment/082-Fragment.iml" filepath="$PROJECT_DIR$/082-Fragment/082-Fragment.iml" />
     </modules>
   </component>
 </project>
