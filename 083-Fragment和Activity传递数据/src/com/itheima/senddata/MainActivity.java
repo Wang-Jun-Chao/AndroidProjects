@@ -1,10 +1,11 @@
-package com.itheima.fragment;
+package com.itheima.senddata;
 
 import android.app.Activity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 public class MainActivity extends Activity {
     private Fragment03 fg3;
@@ -71,5 +72,18 @@ public class MainActivity extends Activity {
         ft.replace(R.id.fl, fg3);
         // 提交
         ft.commit();
+    }
+
+    public void click4(View view) {
+        EditText et_main = (EditText) findViewById(R.id.et_main);
+        String text = et_main.getText().toString();
+
+        // 传递数据
+        fg3.setText(text);
+    }
+
+    public void setText(String text) {
+        EditText et_main = (EditText) findViewById(R.id.et_main);
+        et_main.setText(text);
     }
 }

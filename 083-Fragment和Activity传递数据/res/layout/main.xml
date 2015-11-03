@@ -34,6 +34,17 @@
                 android:text="fragment03"
                 android:onClick="click3"
                 />
+        <EditText
+                android:id="@+id/et_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="传递数据"
+                android:onClick="click4"
+                />
     </LinearLayout>
 </LinearLayout>
 
