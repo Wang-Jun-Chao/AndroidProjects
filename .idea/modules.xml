@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/082-Fragment/082-Fragment.iml" filepath="$PROJECT_DIR$/082-Fragment/082-Fragment.iml" />
       <module fileurl="file://$PROJECT_DIR$/083-Fragment和Activity传递数据/083-Fragment和Activity传递数据.iml" filepath="$PROJECT_DIR$/083-Fragment和Activity传递数据/083-Fragment和Activity传递数据.iml" />
       <module fileurl="file://$PROJECT_DIR$/084-帧动画/084-帧动画.iml" filepath="$PROJECT_DIR$/084-帧动画/084-帧动画.iml" />
+      <module fileurl="file://$PROJECT_DIR$/083-Fragment和Activity传递数据/084-补间动画.iml" filepath="$PROJECT_DIR$/083-Fragment和Activity传递数据/084-补间动画.iml" />
     </modules>
   </component>
 </project>

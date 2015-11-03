@@ -75,7 +75,7 @@ public class MainActivity extends Activity {
     }
 
     public void click4(View view) {
-        EditText et_main = (EditText) findViewById(R.id.et_main);
+        EditText et_main = (EditText) findViewById(R.id.et);
         String text = et_main.getText().toString();
 
         // 传递数据
@@ -83,7 +83,7 @@ public class MainActivity extends Activity {
     }
 
     public void setText(String text) {
-        EditText et_main = (EditText) findViewById(R.id.et_main);
+        EditText et_main = (EditText) findViewById(R.id.et);
         et_main.setText(text);
     }
 }
